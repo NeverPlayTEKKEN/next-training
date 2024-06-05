@@ -17,7 +17,8 @@ const PopUp = (props) => {
 
     return (
       <div style={styles}>
-        <p>hello world</p>
+        <h2>{props.tittle}</h2>
+        {props.contents}
         <Button text="閉じる" handleClick={props.handleClick}/>
       </div>
     )

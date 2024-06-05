@@ -24,7 +24,7 @@ const HomePage = () => {
   }
 
   const startButtonClicked = () => {
-    router.push('/about')
+    router.push('/game')
   }
 
   return (
@@ -33,7 +33,7 @@ const HomePage = () => {
       <Button text="new game" />
       <Button text="setting" handleClick={settingButtonClicked}/>
       {isVisible && (
-        <PopUp handleClick={settingButtonClicked}/>
+        <PopUp handleClick={settingButtonClicked} tittle="setting" contents={<div>this is desicription</div>}/>
       )}
     </div>
   );

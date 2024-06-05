@@ -1,14 +1,29 @@
-'use client '
-
+'use client'
+import dynamic from 'next/dynamic';
 import React from 'react';
+import { useRouter } from 'next/navigation'
 
-const AboutPage = () => {
+const Button = dynamic(() => import('@/components/Button'), {
+  ssr: false
+});
+
+const MyPage = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/post_review')
+  }
+
   return (
     <div>
-      <h1>About Us</h1>
-      <p>This is the About page.</p>
+      <input></input>
+      <Button text="検索" />
+      <h1>マイページ</h1>
+      <p>最初のページです</p>
+      <Button text="レビューを見る"/>
+      <Button text="投稿する" handleClick={handleClick}/>
     </div>
   );
 };
 
-export default AboutPage;
+export default MyPage;
