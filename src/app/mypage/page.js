@@ -11,6 +11,10 @@ const PostReview = dynamic(() => import('@/components/PostReview'), {
   ssr: false
 });
 
+const Header = dynamic(() => import('@/components/Header'), {
+  ssr: false
+});
+
 const MyPage = () => {
   const router = useRouter();
 
@@ -26,8 +30,7 @@ const MyPage = () => {
 
   return (
     <div>
-      <input class="border border-black px-2 py-1"></input>
-      <Button text="検索" />
+      <Header />
       <h1 class="text-3xl font-bold">マイページ</h1>
       <p>最初のページです</p>
       <Button text="レビューを見る"/>
