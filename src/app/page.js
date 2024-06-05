@@ -24,14 +24,15 @@ const HomePage = () => {
   }
 
   const startButtonClicked = () => {
-    router.push('/game')
+    router.push('/mypage')
   }
 
   return (
     <div>
-      <Button text="start" handleClick={startButtonClicked}/>
-      <Button text="new game" />
-      <Button text="setting" handleClick={settingButtonClicked}/>
+      <h1 class="text-3xl font-bold">This is login page</h1>
+      <Button text="ログイン" handleClick={startButtonClicked}/>
+      <Button text="新規登録" />
+      <Button text="設定" handleClick={settingButtonClicked}/>
       {isVisible && (
         <PopUp handleClick={settingButtonClicked} tittle="setting" contents={<div>this is desicription</div>}/>
       )}

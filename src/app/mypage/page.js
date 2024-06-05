@@ -26,9 +26,9 @@ const MyPage = () => {
 
   return (
     <div>
-      <input></input>
+      <input class="border border-black px-2 py-1"></input>
       <Button text="検索" />
-      <h1>マイページ</h1>
+      <h1 class="text-3xl font-bold">マイページ</h1>
       <p>最初のページです</p>
       <Button text="レビューを見る"/>
       <Button text="投稿する" handleClick={postButtonClicked}/>

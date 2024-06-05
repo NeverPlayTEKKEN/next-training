@@ -18,7 +18,7 @@ const PostReview = (props) => {
             <h1>レビュー投稿ページ</h1>
             <Button text="画像をアップロード"/>
             <StarRating />
-            <input></input>
+            <input class="border border-black px-2 py-1"></input>
             <Button text="送信" handleClick={props.handleClick}/>
         </div>
     )
