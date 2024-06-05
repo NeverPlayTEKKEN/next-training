@@ -7,10 +7,6 @@ const Button = dynamic(() => import('@/components/Button'), {
   ssr: false
 });
 
-const PopUp = dynamic(() => import('@/components/PopUp'), {
-  ssr: false
-});
-
 const PostReview = dynamic(() => import('@/components/PostReview'), {
   ssr: false
 });
